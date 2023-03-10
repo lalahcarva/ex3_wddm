@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>  
+    
+    <title>Hello</title>
+
+    <style>
+        body {
+            margin: auto; 
+            width: 50%;
+            text-align: center;
+        }
+        
+        h1 {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        h2 {
+            color: goldenrod;
+            font-size: 50px;
+        }
+
+        img {
+        visibility: hidden;width: 500px;
+    }
+
+        </style>
+
+</head>
+
+<body>  
+    
+    <h1>Hello World!</h1>
+
+    <button onclick="changeColor()">Click me to see the magic</button>
+
+    <button onclick="showImg()">Try one more time</button>
+
+    <h2 id="heart">♥</h2>
+
+    <img id="dog" src="/dog.jpg">
+  
+    <script>  
+        console.log("This is a test log");
+
+        function changeColor() {
+            document.getElementById("heart").style.color = "crimson";
+        }
+
+        function showImg() {
+            document.getElementById("dog").style.visibility = "visible";
+        }
+    </script>
+
+</body>
+
+</html>
